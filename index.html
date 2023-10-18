@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Plus</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--=================favicon https://favicon.io/favicon-generator/ ===================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <!--=================using font awesome========================-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+
+    <!--=================import font family========================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header" id="header">
+            <nav class="navigation">
+                <!--=================logo==============-->
+                <a href="#" class="logo" id="logo">
+                    <span>E</span> - <span>C</span>om
+                </a>
+                <!--menu-btn---->
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+
+                <!--==================menu==================-->
+                <ul class="menu">
+                    <li><a id="all" class="active">All</a></li>
+                    <li><a id="mens">Mens</a></li>
+                    <li><a id="womens">Womens</a></li>
+                    <li><a id="electronics">Electronis</a></li>
+                    <li><a id="jewelery">Jewelery</a></li>
+                </ul>
+
+                <!--============right-nav-(cart-like)======-->
+                <div class="right-nav">
+
+                    <!--==========like=============-->
+                    <a href="#" class="like" id="wishlist">
+                        <i class="far fa-heart"></i>
+                        <span id="wishlistquantity">0</span>
+                    </a>
+
+                    <!--==============cart==========-->
+                    <a href="#" class="cart" id="cartpage">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartquantity">0</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="sortDiv">
+                <select name="sort" id="sortButton">
+                    <option for="sort" value="priceLowToHigh">Price:Low to High</option>
+                    <option for="sort" value="priceHighToLow">Price:High to Low</option>
+                    <option for="sort" value="ratingLowToHigh">Rating:Low to High</option>
+                    <option for="sort" value="ratingHighToLow">Rating:High to Low</option>
+                </select>
+            </div>
+        </div>
+        <div id="pageHeader">
+
+        </div>
+        <div id="content">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
